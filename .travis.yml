@@ -1,12 +1,16 @@
+
+# Linguagem e JDK
 language: java
 jdk: oraclejdk16
 
-install: true
+#install: true
 
+# Mantem um repositorio local do  Maven aumentando a velocidade
+# de build entre diferentes processos de build e test
 cache:
   directories:
   - $home/.m2
   
-  
+# Caso o build aconteca corretamente a analise de cobertura de teste e disparada
 after_success:
   - bash <(curl -s https://codecov.io/bash)
