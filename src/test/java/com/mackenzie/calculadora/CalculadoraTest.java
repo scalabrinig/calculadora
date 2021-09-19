@@ -23,7 +23,7 @@ public class CalculadoraTest {
     @Test
     public void testSomar() {
         System.out.println("TestSomar");
-        assertEquals(2.0, calc.somar(1.0, 2.0));
+        assertEquals(2.0, calc.somar(1.0, 1.0));
         assertEquals(10.2, calc.somar(5.1, 5.1));
         assertEquals(32.5, calc.somar(16.2, 16.3));
         assertNotEquals(2.0, calc.somar(1.0, 2.0));
